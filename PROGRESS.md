@@ -53,6 +53,7 @@
 - [x] Phase 10: Build methodology documentation
 - [x] Phase 11: Implement Remotion cinematic "Journey Through Time" video
 - [x] Phase 12: Implement animated particle background
+- [x] Phase 12b: Implement geographic map with historical locations (GeographicMap)
 - [x] Phase 13: Implement ancestral depth visualization
 - [x] Phase 14: Implement animated research statistics
 - [x] Phase 15: TypeScript check passed
@@ -61,15 +62,21 @@
 - [x] Phase 18: Initialize git repository
 - [x] Phase 19: Create GitHub repository
 - [x] Phase 20: Configure GitHub Pages deployment
+- [x] Phase 21: Fixed npm ci lockfile issue (Windows vs Linux optional wasm deps)
+- [x] Phase 22: Pushed to GitHub + Pages deploy succeeded
+- [x] Phase 23: Lint clean (0 errors), production build + TypeScript pass
+- [x] Phase 24: Live site verified (https://raidor2050.github.io/Bradley/) — index, chunks, subject image all 200
+- [x] Phase 25: Research deliverables committed (DATA_SOURCES + methodology + agent reports +
+      source index + identity resolution + geographic + historical + relationship proof + frontier)
 
 ## Next Steps
 
 - [ ] Obtain and digitize original family documents (biggest evidence win available)
 - [ ] Extend lineage beyond the great-grandparent frontier using land records and gazetteers
 - [ ] Implement GEDCOM import/export
-- [ ] Add global search functionality
+- [ ] Add global search functionality (searchQuery store exists; UI not yet built)
 - [ ] Implement entity resolution pipeline
-- [ ] Add map visualization with historical locations
+- [ ] Build out map UI deeper integration (mapLocations data present)
 - [ ] Create research analytics dashboard
 - [ ] Optimize for mobile
 - [ ] Add accessibility features
