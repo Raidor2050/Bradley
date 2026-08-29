@@ -116,7 +116,7 @@ export default function Carousel3D() {
           {allPeople.map((person, i) => {
             const offset = (i - activeIndex + total) % total;
             const half = Math.floor(total / 2);
-            let normalizedOffset = offset > half ? offset - total : offset;
+            const normalizedOffset = offset > half ? offset - total : offset;
 
             const absOff = Math.abs(normalizedOffset);
             if (absOff > maxVisible) return null;

@@ -17,7 +17,7 @@ export default function FrontierSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {frontierCandidates.map((candidate, idx) => {
+          {frontierCandidates.map((candidate) => {
             const person = people.find((p) => p.id === candidate.candidatePersonId);
             const target = people.find((p) => p.id === candidate.targetPersonId);
             const lowConfidence = candidate.confidence < 0.2;
@@ -95,7 +95,7 @@ export default function FrontierSection() {
               <ul className="space-y-1.5">
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-emerald-400 mt-1">\u2713</span>
-                  Forebears: ~845 people named "Mukhuti" worldwide
+                  Forebears: ~845 people named &quot;Mukhuti&quot; worldwide
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-emerald-400 mt-1">\u2713</span>
@@ -103,7 +103,7 @@ export default function FrontierSection() {
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-emerald-400 mt-1">\u2713</span>
-                  Variants: "Mukhuty" (~231) and "Mukuti" (~588) also exist
+                  Variants: &quot;Mukhuty&quot; (~231) and &quot;Mukuti&quot; (~588) also exist
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-emerald-400 mt-1">\u2713</span>
@@ -119,7 +119,7 @@ export default function FrontierSection() {
               <ul className="space-y-1.5">
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-orange-400 mt-1">!</span>
-                  No public record ties a specific Barisal estate ('Jomidar Boro Bari') to a Mukhuti family
+                  No public record ties a specific Barisal estate (&apos;Jomidar Boro Bari&apos;) to a Mukhuti family
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-orange-400 mt-1">!</span>
@@ -127,11 +127,11 @@ export default function FrontierSection() {
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-orange-400 mt-1">!</span>
-                  The 'Dr Horen Mukherjee — Assam Governor' claim is disproven (no Mookerjee ever governed Assam)
+                  The &apos;Dr Horen Mukherjee — Assam Governor&apos; claim is disproven (no Mookerjee ever governed Assam)
                 </li>
                 <li className="flex items-start gap-2 text-sm text-fog">
                   <span className="text-orange-400 mt-1">!</span>
-                  No documented 'Wells Mission' exists in Shillong; likely a misremembered local church compound
+                  No documented &apos;Wells Mission&apos; exists in Shillong; likely a misremembered local church compound
                 </li>
               </ul>
             </div>

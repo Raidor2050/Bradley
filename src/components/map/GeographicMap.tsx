@@ -143,7 +143,7 @@ export default function GeographicMap() {
             ) : (
               <p className="text-sm text-fog">
                 Tap a marker on the map to see the locality, its period, and the
-                people connected to it. Anchors include Barisal Sadar's localities
+                people connected to it. Anchors include Barisal Sadar&apos;s localities
                 (Notun Para, Bogura Road, Bangla Bazar, Kazipara), Shillong, and
                 the historical regions of undivided Bengal and Calcutta.
               </p>

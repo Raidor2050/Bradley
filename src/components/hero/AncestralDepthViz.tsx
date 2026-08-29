@@ -162,7 +162,7 @@ export default function AncestralDepthViz() {
                 <p className="text-sm text-fog max-w-2xl mx-auto">
                   The investigation has traced a family-provided lineage of three generations
                   — Bradley Mukhuti, his probable father Bernard Bonoj Mukhuti, and his
-                  grandfather Nishi Kanta Mukhuti of Barisal, alongside the inferred 'Kanta'
+                  grandfather Nishi Kanta Mukhuti of Barisal, alongside the inferred &apos;Kanta&apos;
                   brothers. The surname itself is documented as an older village-derived form
                   of the Bengali Brahmin Mukherjee lineage. Great-grandparents and beyond sit
                   at the research frontier, unverified. The investigation remains active.

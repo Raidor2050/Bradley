@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useCallback, useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 import {
   ReactFlow,
   Node,
@@ -10,7 +10,6 @@ import {
   MiniMap,
   useNodesState,
   useEdgesState,
-  MarkerType,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { people, relationships, evidences, sources } from "@/lib/data/genealogy";
@@ -48,7 +47,6 @@ const relatedPeople = [
 export default function FamilyGraph() {
   const { selectedPersonId, setSelectedPerson, highlightedPersonId, setHighlightedPerson } =
     useAncestryStore();
-  const [showDetail, setShowDetail] = useState(false);
   const [showEvidence, setShowEvidence] = useState(false);
 
   const { initialNodes, initialEdges } = useMemo(() => {

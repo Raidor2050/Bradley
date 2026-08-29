@@ -7,7 +7,7 @@ export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    setIsVisible(true);
+    const timer = window.setTimeout(() => setIsVisible(true), 50);
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -69,6 +69,7 @@ export default function HeroSection() {
     animate();
 
     return () => {
+      window.clearTimeout(timer);
       cancelAnimationFrame(animId);
       window.removeEventListener("resize", resize);
     };

@@ -114,9 +114,8 @@ const SectionDivider: React.FC<{ title: string; subtitle: string }> = ({
 
 const PersonSlide: React.FC<{
   person: Person;
-  index: number;
   sectionLabel?: string;
-}> = ({ person, index, sectionLabel }) => {
+}> = ({ person, sectionLabel }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -132,7 +131,6 @@ const PersonSlide: React.FC<{
   });
 
   const hasImage = !!person.imageUrl;
-  const isGeneration0 = person.generation === 0;
   const genLabel =
     person.generation < 0
       ? `Discovery ${Math.abs(person.generation)}`
@@ -548,7 +546,6 @@ const GenerationSlide: React.FC<{
 
 export const JourneyVideo: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps, durationInFrames } = useVideoConfig();
 
   const introEnd = 55;
   const genDuration = 70;
@@ -675,7 +672,6 @@ export const JourneyVideo: React.FC = () => {
           >
             <PersonSlide
               person={person}
-              index={i}
               sectionLabel="Inferred Relatives"
             />
           </Sequence>
@@ -703,7 +699,6 @@ export const JourneyVideo: React.FC = () => {
           >
             <PersonSlide
               person={person}
-              index={i}
               sectionLabel="Das / Mukherjee Line"
             />
           </Sequence>
@@ -762,7 +757,7 @@ export const JourneyVideo: React.FC = () => {
                 marginBottom: 12,
               }}
             >
-              250+ Years of Context · 25 People · 17 Sources
+              250+ Years of Context · 25 People · 18 Sources
             </div>
             <div
               style={{

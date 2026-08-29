@@ -7,13 +7,13 @@
 | Known Generations | 3 |
 | Discovered Generations | 0 |
 | Candidate Generations | 2 |
-| Total People | 21 |
-| Verified People | 1 |
-| Candidate People | 18 |
+| Total People | 25 |
+| Verified People | 2 |
+| Candidate People | 21 |
 | Total Relationships | 2 |
 | Verified Relationships | 0 |
 | Unresolved Relationships | 5 |
-| Total Sources | 17 |
+| Total Sources | 18 |
 | Documents Found | 0 |
 | Locations Discovered | 8 |
 | Historical Years Covered | 250+ |

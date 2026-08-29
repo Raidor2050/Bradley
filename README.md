@@ -71,7 +71,7 @@ public records**, and the platform is transparent about that.
 - **Research Frontier** — every branch that *could* still be traced, the current
   evidence, an honest confidence score, and exactly which sources are needed.
 - **Cinematic Journey** — a Remotion-generated walk back through the lineage.
-- **Source Explorer** — 17 catalogued sources with provenance, type, and
+- **Source Explorer** — 18 catalogued sources with provenance, type, and
   confidence contribution.
 
 ## Tech stack
