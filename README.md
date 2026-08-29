@@ -35,10 +35,21 @@ The answer, honestly, curves into a frontier faster than a traditional
 | G3+ | Great-grandparents | **Unverified frontier** |
 
 Below the family-known baseline, the **surname itself** is historically
-verifiable: *Mukhuti* is a real, rare (~845 people worldwide) Bengali Brahmin
-surname — the older village-derived form of **Mukherjee / Mukhopadhyay**. But
-**no specific Barisal ancestor beyond the family's own knowledge is confirmed by
-public records**, and the platform is transparent about that.
+verifiable in two ways:
+
+1. *Mukhuti* is a real, rare (~854 people worldwide, plus the Mukhuty/Mukhati/
+   Mukhoti variants) Bengali Brahmin surname — the older village-derived form of
+   **Mukherjee / Mukhopadhyay**.
+2. **Public records document the surname in the Barisal region itself**: the
+   1913 **Barisal Conspiracy Case** annals name **Hemendra Nath Mukhuti**
+   ("discharged in the Barisal conspiracy case") and **Dwijendra Mukhuti**
+   (Sonarang National School headmaster, Anushilan Samiti), and a US Social
+   Security record shows a **Mukhuti family at Bisharkandi in Barisal district**
+   (a documented Mukhuti–Das marriage). These are documented **context**
+   findings — **not** yet shown to be Bradley's direct line.
+
+No specific Barisal **ancestor** beyond the family's own knowledge is confirmed
+by public records, and the platform is transparent about that.
 
 ## What makes this honest (not just "pretty")
 
@@ -47,12 +58,17 @@ public records**, and the platform is transparent about that.
   unverified · conflicting`.
 - **Entity resolution discipline** — matching on a common surname (Das, Mukherjee)
   is a leads-signal only, never a merge.
-- **Adverse evidence is shown openly**:
+- **Adverse evidence is shown openly**, and revised when research improves:
   - The family tradition "Dr Horen Mukherjee — **Assam** Governor" is flagged
-    **conflicting/disproven**: no Mookerjee ever governed Assam; the closest
-    documented figure (H.C. Mookerjee) was Governor of **West Bengal**.
-  - The claimed "**Wells Mission**" in Shillong has **no documented existence**;
-    likely a misremembered local church compound.
+    **conflicting/disproven**: no Mookerjee ever governed Assam. The tradition is
+    best explained as a **fusion** of two real Mukherjees — H.C. Mookerjee
+    (Governor of **West Bengal**) and Syama Prasad Mookerjee (**Mukherjee +
+    Assam + undivided Bengal**, minister, never a governor) — none a documented
+    blood relative.
+  - The claimed "**Wells Mission**" in Shillong is now resolved as the phonetic
+    **Welsh Mission** (Presbyterian Church of Wales, mother church = Mawkhar
+    Presbyterian, 1874–1969) — the mission identification is supported; the
+    priest named Das remains unverified.
   - "Jomidar Boro Bari" is a **generic** zamindar-house term — no record ties a
     specific Barisal estate to a Mukhuti family.
 - **No fabricated ancestors, no AI images presented as real ancestors, no copied
@@ -71,7 +87,7 @@ public records**, and the platform is transparent about that.
 - **Research Frontier** — every branch that *could* still be traced, the current
   evidence, an honest confidence score, and exactly which sources are needed.
 - **Cinematic Journey** — a Remotion-generated walk back through the lineage.
-- **Source Explorer** — 18 catalogued sources with provenance, type, and
+- **Source Explorer** — 26 catalogued sources with provenance, type, and
   confidence contribution.
 
 ## Tech stack

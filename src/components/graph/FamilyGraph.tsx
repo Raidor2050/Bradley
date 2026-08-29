@@ -44,6 +44,15 @@ const relatedPeople = [
   "person-horen",
 ];
 
+const contextPeople = [
+  "person-hcmookerjee",
+  "person-spm",
+  "person-dwijendra",
+  "person-hemendra",
+  "person-basanti",
+  "person-sudhir",
+];
+
 export default function FamilyGraph() {
   const { selectedPersonId, setSelectedPerson, highlightedPersonId, setHighlightedPerson } =
     useAncestryStore();
@@ -146,6 +155,29 @@ export default function FamilyGraph() {
       });
     });
 
+    const contextRowY = relatedRowY + nodeH + vGap + 30;
+    const contextTotalW = contextPeople.length * nodeW + (contextPeople.length - 1) * hGap;
+    const contextStartX = -contextTotalW / 2;
+
+    contextPeople.forEach((id, i) => {
+      const person = people.find((p) => p.id === id);
+      if (!person) return;
+      const x = contextStartX + i * (nodeW + hGap);
+      nodes.push({
+        id: person.id,
+        type: "personNode",
+        position: { x, y: contextRowY },
+        data: {
+          person,
+          isSelected: person.id === selectedPersonId,
+          isHighlighted: person.id === highlightedPersonId,
+          isCandidate: true,
+          onSelect: () => setSelectedPerson(person.id === selectedPersonId ? null : person.id),
+          onHover: (h: boolean) => setHighlightedPerson(h ? person.id : null),
+        },
+      });
+    });
+
     return { initialNodes: nodes, initialEdges: edges };
   }, [selectedPersonId, highlightedPersonId]);
 
@@ -169,6 +201,9 @@ export default function FamilyGraph() {
           <p className="text-sm text-mist max-w-xl mx-auto">
             The Mukhuti lineage of Bradley — 3 known generations from family knowledge;
             the father link is probable and deeper ancestry sits at the research frontier.
+            The green row shows documented Mukhuti/Mookerjee figures found through public
+            records (1913 Barisal Conspiracy Case; a 1923 Barisal-district SSA record) —
+            verified as real people, shown as context, NOT yet connected to the direct line.
           </p>
         </div>
 
@@ -184,6 +219,10 @@ export default function FamilyGraph() {
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20">
             <div className="w-2 h-2 rounded-full bg-purple-400" />
             <span className="text-purple-400">Das / Mukherjee Line (Unverified)</span>
+          </div>
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+            <div className="w-2 h-2 rounded-full bg-emerald-400" />
+            <span className="text-emerald-400">Documented Context (verified records)</span>
           </div>
         </div>
 

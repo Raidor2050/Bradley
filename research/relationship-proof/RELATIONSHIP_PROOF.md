@@ -25,10 +25,18 @@ What supports each relationship asserted (or refused) in the dataset.
   father is marked `probable`, not asserted.
 - **Mukhuti ↔ Mukherjee/Mookerjee:** no parent-child relationship asserted.
 - **H.C. Mookerjee ↔ family:** context only; explicitly **not** a confirmed
-  relative.
+  relative. Same for Syama Prasad Mookerjee (context; fusion resolves the "Horen"
+  tradition, no blood link).
+- **Documented collateral Mukhutis ↔ direct line:** Hemendra Nath Mukhuti and
+  Dwijendra Mukhuti (Barisal Conspiracy Case / Sonarang, 1910–14) and Basanti K
+  Mukhuti / Sudhir Kumar Dass (Bisharkandi SSA record) are `verified` individuals
+  but have **no asserted relationship** to Bradley's family — kept visually
+  distinct as context nodes and flagged in `frontier-4` for future DNA/records
+  testing.
 
 ## Proof-standard note
 No relationship in the dataset is backed by a birth/marriage/death record, census
 entry, obituary, or directory. Every asserted relationship therefore stays below
 `verified`. This is stated honestly in the UI (Evidence Mode) and in
-`../METHODOLOGY.md`.
+`../METHODOLOGY.md`. Round-2 findings are labelled collateral context, never merged
+into the direct tree on name/region similarity alone.

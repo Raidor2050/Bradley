@@ -757,7 +757,7 @@ export const JourneyVideo: React.FC = () => {
                 marginBottom: 12,
               }}
             >
-              250+ Years of Context · 25 People · 18 Sources
+              250+ Years of Context · 25 People · 26 Sources
             </div>
             <div
               style={{
